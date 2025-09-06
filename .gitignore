@@ -1,0 +1,12 @@
+# abe generated files
+runs/
+*.log
+
+# API keys and secrets
+.env
+.env.local
+
+# Node modules (if using npm locally)
+node_modules/
+
+.DS_Store

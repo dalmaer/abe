@@ -1,0 +1,34 @@
+{
+  "spec": "",
+  "screens": [],
+  "models": [],
+  "items": [
+    {
+      "id": "feed-status_google_v2",
+      "screen": "Feed Status",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 2,
+      "promptHash": "78920725e0b03439",
+      "path": "runs/2025-09-06T03-50-55Z/generate/google/screen-feed-status_v2.png",
+      "timestamp": "2025-09-06T03:51:01.978Z"
+    },
+    {
+      "id": "feed-status_google_v3",
+      "screen": "Feed Status",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 3,
+      "promptHash": "5363b17749f45fc4",
+      "path": "runs/2025-09-06T03-50-55Z/generate/google/screen-feed-status_v3.png",
+      "timestamp": "2025-09-06T03:51:02.880Z"
+    },
+    {
+      "id": "feed-status_google_v1",
+      "screen": "Feed Status",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 1,
+      "promptHash": "25f1ac2a43227882",
+      "path": "runs/2025-09-06T03-50-55Z/generate/google/screen-feed-status_v1.png",
+      "timestamp": "2025-09-06T03:51:03.287Z"
+    }
+  ]
+}

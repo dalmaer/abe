@@ -1,0 +1,98 @@
+{
+  "spec": "specs/dogfood-tracker.md",
+  "screens": [
+    "Feed Status",
+    "Feed Log",
+    "Settings"
+  ],
+  "models": [
+    "google:gemini-2.5-flash-image-preview"
+  ],
+  "items": [
+    {
+      "id": "feed-status_google_v1",
+      "screen": "Feed Status",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 1,
+      "promptHash": "25f1ac2a43227882",
+      "path": "runs/2025-09-06T03-54-15Z/generate/google/screen-feed-status_v1.png",
+      "timestamp": "2025-09-06T03:54:29.987Z"
+    },
+    {
+      "id": "feed-status_google_v2",
+      "screen": "Feed Status",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 2,
+      "promptHash": "78920725e0b03439",
+      "path": "runs/2025-09-06T03-54-15Z/generate/google/screen-feed-status_v2.png",
+      "timestamp": "2025-09-06T03:54:21.588Z"
+    },
+    {
+      "id": "feed-status_google_v3",
+      "screen": "Feed Status",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 3,
+      "promptHash": "5363b17749f45fc4",
+      "path": "runs/2025-09-06T03-54-15Z/generate/google/screen-feed-status_v3.png",
+      "timestamp": "2025-09-06T03:54:24.175Z"
+    },
+    {
+      "id": "feed-log_google_v1",
+      "screen": "Feed Log",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 1,
+      "promptHash": "fad708c3a37b1c69",
+      "path": "runs/2025-09-06T03-54-15Z/generate/google/screen-feed-log_v1.png",
+      "timestamp": "2025-09-06T03:54:31.402Z"
+    },
+    {
+      "id": "feed-log_google_v2",
+      "screen": "Feed Log",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 2,
+      "promptHash": "2878d3c667dc26f0",
+      "path": "runs/2025-09-06T03-54-15Z/generate/google/screen-feed-log_v2.png",
+      "timestamp": "2025-09-06T03:54:33.892Z"
+    },
+    {
+      "id": "feed-log_google_v3",
+      "screen": "Feed Log",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 3,
+      "promptHash": "3f5f242dfe7d35a6",
+      "path": "runs/2025-09-06T03-54-15Z/generate/google/screen-feed-log_v3.png",
+      "timestamp": "2025-09-06T03:54:36.884Z"
+    },
+    {
+      "id": "settings_google_v1",
+      "screen": "Settings",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 1,
+      "promptHash": "e75f32938403265f",
+      "path": "runs/2025-09-06T03-54-15Z/generate/google/screen-settings_v1.png",
+      "timestamp": "2025-09-06T03:54:38.862Z"
+    },
+    {
+      "id": "settings_google_v2",
+      "screen": "Settings",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 2,
+      "promptHash": "0c8e087b546f9d1e",
+      "path": "runs/2025-09-06T03-54-15Z/generate/google/screen-settings_v2.png",
+      "timestamp": "2025-09-06T03:54:41.374Z"
+    },
+    {
+      "id": "settings_google_v3",
+      "screen": "Settings",
+      "model": "google:gemini-2.5-flash-image-preview",
+      "variant": 3,
+      "promptHash": "321e3772acb868ee",
+      "path": "runs/2025-09-06T03-54-15Z/generate/google/screen-settings_v3.png",
+      "timestamp": "2025-09-06T03:54:43.192Z"
+    }
+  ],
+  "title": "Dogfood Feeding Tracker",
+  "totalImages": 9,
+  "successfulImages": 9,
+  "timestamp": "2025-09-06T03:54:43.193Z"
+}

@@ -1,0 +1,78 @@
+{
+  "outDir": "runs",
+  "defaultVariants": 3,
+  "defaultConcurrency": 3,
+  "modelAliases": {
+    "baseline": [
+      "openai:gpt-4o",
+      "openai:dall-e-3"
+    ],
+    "image": [
+      "openai:dall-e-3",
+      "openai:dall-e-2",
+      "google:gemini-2.5-flash-image-preview"
+    ],
+    "vision": [
+      "openai:gpt-4o",
+      "anthropic:claude-3-5-sonnet-20241022"
+    ],
+    "google": [
+      "google:gemini-2.5-flash-image-preview"
+    ],
+    "all": [
+      "openai:gpt-4o",
+      "openai:dall-e-3",
+      "google:gemini-2.5-flash-image-preview",
+      "anthropic:claude-3-5-sonnet-20241022"
+    ]
+  },
+  "providerOptions": {
+    "openai": {
+      "apiKeyEnv": "OPENAI_API_KEY"
+    },
+    "anthropic": {
+      "apiKeyEnv": "ANTHROPIC_API_KEY"
+    },
+    "google": {
+      "apiKeyEnv": "GOOGLE_API_KEY"
+    },
+    "stability": {
+      "apiKeyEnv": "STABILITY_API_KEY"
+    }
+  },
+  "critique": {
+    "model": "openai:gpt-4o",
+    "rubric": [
+      {
+        "id": "task_fitness",
+        "label": "Task fitness & clarity",
+        "weight": 0.35
+      },
+      {
+        "id": "hierarchy",
+        "label": "Visual hierarchy & layout",
+        "weight": 0.2
+      },
+      {
+        "id": "a11y",
+        "label": "Accessibility (contrast/tap targets)",
+        "weight": 0.2
+      },
+      {
+        "id": "consistency",
+        "label": "Consistency across screens",
+        "weight": 0.15
+      },
+      {
+        "id": "aesthetic",
+        "label": "Aesthetic quality",
+        "weight": 0.1
+      }
+    ]
+  },
+  "prompts": {
+    "generate": "SYSTEM: You are a senior product designer generating high-fidelity UI mockups. Output images that look like real app screens, flat front-on, no device frame unless requested.\n\nUSER:\nTitle: {{title}}\nType: {{type}}\nScreen: {{screen}}{{#description_for_screen_or_overall}}\nDescription: {{description_for_screen_or_overall}}{{/description_for_screen_or_overall}}{{#styles}}\nStyle guidelines: {{styles}}{{/styles}}{{#style_prompt}}\nStyle specification: {{style_prompt}}{{/style_prompt}}\nConstraints:\n- WCAG AA contrast\n- Touch targets ≥48dp\n- Clear hierarchy; no device chrome unless requested\nVariant bias: {{variant_descriptor}}\nInspiration: {{inspiration}}\nReturn: a single high-res image.",
+    "critique": "SYSTEM: You are an exacting design critic and accessibility reviewer. Return valid JSON only.\n\nUSER:\nEvaluate the provided UI against the spec.\nSpec summary:\nTitle: {{title}}\nType: {{type}}\nKey tasks: {{primary_tasks}}\nStyle intent: {{styles}}\nScreens: {{screens_list}}\nCriteria with weights:\n{{rubric_with_weights}}\nFor each image return: {\"scores\":{...},\"weightedTotal\":#,\"strengths\":[3],\"issues\":[3],\"revisePrompt\":\"<=50 words\"}",
+    "revise": "SYSTEM: You are refining an existing UI mockup using the critique notes. Keep original intent.\n\nUSER:\nOriginal intent: {{title}} / {{type}}\nStyle: {{styles}}\nScreen: {{screen}}\nRevise instructions: {{revisePrompt}}\nReturn: one updated image, same framing."
+  }
+}

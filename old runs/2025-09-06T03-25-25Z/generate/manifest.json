@@ -1,0 +1,16 @@
+{
+  "spec": "specs/dogfood-tracker.md",
+  "title": "Dogfood Feeding Tracker",
+  "screens": [
+    "Feed Status",
+    "Feed Log",
+    "Settings"
+  ],
+  "models": [
+    "google:gemini-2.5-flash-image-preview"
+  ],
+  "totalImages": 9,
+  "successfulImages": 0,
+  "timestamp": "2025-09-06T03:25:34.787Z",
+  "items": []
+}

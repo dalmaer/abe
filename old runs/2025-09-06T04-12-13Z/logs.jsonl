@@ -1,0 +1,3 @@
+{"ts":"2025-09-06T04:12:13.971Z","level":"info","step":"run-initialized","message":"Run directory created","meta":{"runId":"2025-09-06T04-12-13Z","runDir":"runs/2025-09-06T04-12-13Z"}}
+{"ts":"2025-09-06T04:12:13.973Z","level":"info","step":"spec-saved","message":"Design spec saved to run","meta":{"specPath":"runs/2025-09-06T04-12-13Z/input/spec.md","title":"Test App"}}
+{"ts":"2025-09-06T04:12:13.973Z","level":"info","step":"generate-start","message":"Starting image generation","meta":{"models":"baseline","variants":3,"screens":["Main Screen"]}}

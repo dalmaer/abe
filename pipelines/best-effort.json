@@ -1,0 +1,30 @@
+{
+  "name": "best-effort",
+  "steps": [
+    {
+      "id": "generate-pass-1",
+      "run": "generate",
+      "spec": "specs/parking-app.md",
+      "models": "image",
+      "variants": 4,
+      "screens": ["Save Spot", "Find Car"]
+    },
+    {
+      "id": "critique-pass-1",
+      "run": "critique",
+      "from": "generate-pass-1"
+    },
+    {
+      "id": "revise-pass-2",
+      "run": "iterate",
+      "from": "critique-pass-1",
+      "select": { "topK": 3, "minScore": 70 },
+      "passes": 1
+    },
+    {
+      "id": "critique-pass-2",
+      "run": "critique",
+      "from": "revise-pass-2"
+    }
+  ]
+}

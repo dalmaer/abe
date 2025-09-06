@@ -1,0 +1,6 @@
+{"ts":"2025-09-06T03:44:22.988Z","level":"info","step":"run-initialized","message":"Run directory created","meta":{"runId":"2025-09-06T03-44-22Z","runDir":"runs/2025-09-06T03-44-22Z"}}
+{"ts":"2025-09-06T03:44:22.990Z","level":"info","step":"spec-saved","message":"Design spec saved to run","meta":{"specPath":"runs/2025-09-06T03-44-22Z/input/spec.md","title":"Dogfood Feeding Tracker"}}
+{"ts":"2025-09-06T03:44:22.990Z","level":"info","step":"generate-start","message":"Starting image generation","meta":{"models":"google:gemini-2.5-flash-image-preview","variants":3,"screens":["Feed Status","Feed Log","Settings"]}}
+{"ts":"2025-09-06T03:44:22.991Z","level":"info","step":"generate-image-start","message":"Generating image","meta":{"model":"google:gemini-2.5-flash-image-preview","screen":"Feed Status","variant":1}}
+{"ts":"2025-09-06T03:44:22.991Z","level":"info","step":"generate-image-start","message":"Generating image","meta":{"model":"google:gemini-2.5-flash-image-preview","screen":"Feed Status","variant":2}}
+{"ts":"2025-09-06T03:44:22.991Z","level":"info","step":"generate-image-start","message":"Generating image","meta":{"model":"google:gemini-2.5-flash-image-preview","screen":"Feed Status","variant":3}}
