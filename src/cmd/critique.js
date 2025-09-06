@@ -21,6 +21,10 @@ export const critiqueCmd = {
       describe: 'Source run directory or manifest file',
       type: 'string'
     },
+    run: {
+      describe: 'Run directory (e.g., runs/TheRun) to critique all generated images with their spec',
+      type: 'string'
+    },
     spec: {
       describe: 'Path to design spec (Markdown)',
       type: 'string'
@@ -59,7 +63,7 @@ export const critiqueCmd = {
       if (argv.spec) {
         spec = await parseSpec(argv.spec);
       } else {
-        spec = await findSpecFromRun(argv.from, argv.out);
+        spec = await findSpecFromRun(argv.from || argv.run, argv.out);
       }
 
       if (!spec) {
@@ -72,7 +76,7 @@ export const critiqueCmd = {
       const images = await resolveImagePaths(argv);
       
       if (images.length === 0) {
-        throw new Error('No images found to critique. Use --image, --images, or --from.');
+        throw new Error('No images found to critique. Use --image, --images, --from, or --run.');
       }
 
       const promptOverrides = loadPromptOverrides(argv, 'critique');
@@ -133,6 +137,11 @@ async function resolveImagePaths(argv) {
   if (argv.from) {
     const fromImages = await resolveImagesFromRun(argv.from);
     images.push(...fromImages);
+  }
+
+  if (argv.run) {
+    const runImages = await resolveImagesFromRun(argv.run);
+    images.push(...runImages);
   }
 
   return [...new Set(images)];
