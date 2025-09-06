@@ -89,7 +89,7 @@ async function critiqueSingleImage({
   promptOverrides
 }) {
   try {
-    await runStore.log('info', 'critique-image-start', `Critiquing image`, {
+    await runStore.log('info', 'critique-image-start', `Critiquing image ${path.basename(imagePath)} with ${model}`, {
       imagePath: path.basename(imagePath),
       model
     });
