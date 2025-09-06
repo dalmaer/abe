@@ -1,3 +1,0 @@
-{"ts":"2025-09-06T03:30:11.037Z","level":"info","step":"run-initialized","message":"Run directory created","meta":{"runId":"2025-09-06T03-30-11Z","runDir":"runs/2025-09-06T03-30-11Z"}}
-{"ts":"2025-09-06T03:30:11.039Z","level":"info","step":"spec-saved","message":"Design spec saved to run","meta":{"specPath":"runs/2025-09-06T03-30-11Z/input/spec.md","title":"Dogfood Feeding Tracker"}}
-{"ts":"2025-09-06T03:30:11.039Z","level":"info","step":"generate-start","message":"Starting image generation","meta":{"models":"google:gemini-2.5-flash-image-preview","variants":3,"screens":["Feed Status","Feed Log","Settings"]}}

@@ -1,3 +1,0 @@
-{"ts":"2025-09-05T22:42:01.319Z","level":"info","step":"run-initialized","message":"Run directory created","meta":{"runId":"2025-09-05T22-42-01Z","runDir":"runs/2025-09-05T22-42-01Z"}}
-{"ts":"2025-09-05T22:42:01.320Z","level":"info","step":"spec-saved","message":"Design spec saved to run","meta":{"specPath":"runs/2025-09-05T22-42-01Z/input/spec.md","title":"Where Is My Car? (Parking Tracker)"}}
-{"ts":"2025-09-05T22:42:01.320Z","level":"info","step":"generate-start","message":"Starting image generation","meta":{"models":"google","variants":3,"screens":["Save Spot","Find Car"]}}
